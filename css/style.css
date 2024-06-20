@@ -1,0 +1,1137 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos de body */
+body{
+ background-color: #f5f5f5;
+}
+
+
+/* estilos para inicio en formato mobile */
+/* estilos para header */
+.contenedor-inicio{
+    background-color: #d1d1d1;
+    border-radius: .5rem;
+}
+
+.navbar{
+    height: 15vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.navbar .container-fluid{
+    text-align: center;
+}
+
+.navbar-collapse .navbar-nav{
+   text-align: center;
+   margin-top: 8.7rem;
+   height: 25vh;
+   display: flex;
+   justify-content: center;
+   gap: 0.5rem;
+   margin-left: .5rem;
+}
+
+.navbar-collapse .navbar-nav .nav-item-uno, .nav-item-dos, .nav-item-tres, 
+.nav-item-cuatro{
+    background-color: #ffffff;
+    box-shadow: 4px 4px 4px rgb(87, 87, 87);
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.segundo-menu-inicio{
+    display: none;
+}
+
+/* fin del header */
+
+/* estilos para contenido extra de inicio */
+
+.section-portada{
+    background-color: #d1d1d1;
+    margin: .5rem;
+    margin-top: 1rem;
+    height: 27vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+
+.section-portada img{
+    width: 100%;
+}
+
+.section-portada h1{
+    font-weight: bold;
+    box-shadow: 1px 1px 4px black;
+    padding: .5rem;
+}
+
+/* fin de estilos para contenido extra de inicio */
+
+
+/* estilos contenido principal de inicio */
+
+.contenido-principal-inicio{
+    background-color: #d1d1d1;
+    margin: .5rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    height: 130vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: .5rem;
+}
+
+/* estilos para las cards de main inicio */
+
+.contenido-principal-inicio .card{
+    box-shadow: 3px 3px 5px rgb(48, 48, 48);
+    width: 13.5rem;
+}
+
+.contenido-principal-inicio .card .card-body {
+    text-align: center;
+}
+
+.contenido-principal-inicio .card-body .card-title{
+    background-color: #D1D1D1;
+    padding: .5rem;
+    font-weight: bold;
+    font-size: .9rem;
+    text-transform: uppercase;
+    border-radius: .7rem;
+    text-align: center;
+}
+
+
+.contenido-principal-inicio .card-body .card-text{
+    font-size: small;
+}
+
+
+.contenido-principal-inicio .card .card-body .btn{
+    box-shadow: 2px 2px 4px #345b96;
+}
+
+/* fin de las cards */
+/* fin del contenido principal */
+
+
+/* estilos para contenido secundario de inicio */
+
+.secundario-inicio-uno{
+    background-color: #d1d1d1;
+    margin: .5rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.secundario-inicio-uno img{
+    width: 100%;
+}
+
+.secundario-inicio-dos img{
+    width: 20%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+/* fin de estilos para contenido secundario inicio */
+
+/* estilos para pie de pagina de inicio */
+
+.inicio-derechos{
+    background-color: black;
+    height: 20vh;
+    margin-top: 1.5rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inicio-derechos h3{
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.inicio-derechos h4{
+    font-size: small;
+    color: #9f9f9d;
+}
+
+.inicio-derechos .hijo-cuatro-derecho{
+    display: none;
+}
+
+.inicio-derechos .hijo-derechos-link{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* fin de estilos para pie de pagina */
+
+/* fin de estilos para formato mobile inicio */
+
+/* estilos para formato de tablet inicio */
+
+@media screen and (min-width:600px){
+   
+    /* estilos de img menu */
+  
+    .contenedor-inicio .navbar .container-fluid .navbar-brand{
+        width: 70%;
+    }
+
+    /* estilos de hijos ul */
+    .contenedor-inicio .navbar .container-fluid 
+    .navbar-collapse .navbar-nav{
+        width: 50%;
+        margin-left: 1rem;
+    }
+
+    .segundo-menu-inicio{
+        display: none;
+    }
+
+    .contenido-principal-inicio .card{
+        width: 14rem;
+    }
+
+    .section-portada{
+        height: 31vh;
+    }
+
+}
+
+/* fin de estilos para formato tablet inicio */
+
+
+/* estilos para formato pc inicio*/
+
+@media screen and (min-width:1024px){
+    .navbar{
+        display: none;
+    }
+
+    /* estilos para div-padre-inicio */
+
+    .div-padre-inicio{
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-columns: auto;
+
+        grid-template-areas: 
+        "contenedor-inicio contenedor-inicio"
+        "section-portada section-portada"
+        "contenido-principal-inicio contenido-principal-inicio"
+        "secundario-inicio-uno secundario-inicio-uno"
+        "inicio-derechos inicio-derechos";
+    }
+
+    .contenedor-inicio{
+        grid-area: contenedor-inicio;
+    }
+
+    /* estilos para segundo menu de inicio formato pc */
+
+    .segundo-menu-inicio{
+        display: block;
+        height: 25vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .segundo-menu-inicio .contenedor-img-dos{
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .segundo-menu-inicio .contenedor-img-dos img{
+        width: 50%;
+    }
+
+    .segundo-menu-inicio .contenedor-img-dos img:hover{
+        filter: drop-shadow(3px 3px 5px rgb(31, 31, 31));
+    }
+
+    .segundo-menu-inicio nav{
+        width: 30%;
+        margin-right: 6rem;
+    }
+
+    .segundo-menu-inicio nav .contenedor-menu-dos{
+        height: 15vh;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+
+    .segundo-menu-inicio nav .contenedor-menu-dos li{
+        background-color: rgb(240, 240, 240);
+        text-align: center;
+        padding: 1.1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 1rem;
+        box-shadow: 2px 2px 4px rgb(36, 36, 36);
+        transition: 2s;
+    }
+    
+
+    .segundo-menu-inicio nav .contenedor-menu-dos li:hover{
+        background-color: rgb(166, 166, 166);
+        transform: scale(0.9);
+        box-shadow: 3px 3px 5px rgb(87, 87, 87);
+        transition: 2seg;
+        border-radius: 2rem;
+        box-shadow: 1px 1px 1pc black;
+    }
+
+    .segundo-menu-inicio nav .contenedor-menu-dos li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    /* estilos para contenido extra de inicio formaro pc */
+
+    
+    .section-portada{
+        height: 90vh;
+        margin: 0.5rem;
+        grid-area: section-portada;
+    }
+
+    .section-portada img{
+        width: 100%;
+    }
+
+    .section-portada h1{
+        width: 30%;
+        margin-top: 0.5rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* fin de estilos para contenido extra de inicio */
+
+
+    /* estilos para contenido principal inicio formato pc */
+
+    .contenido-principal-inicio{
+        height: 55vh;
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        grid-area: contenido-principal-inicio;
+    }
+
+    .contenido-principal-inicio .card{
+        width: 18rem;
+        transition: 2s;
+    }
+
+    .contenido-principal-inicio .card:hover{
+        width: 18rem;
+        transform: scale(1.1);
+        transition: 2s;
+    }
+
+    .contenido-principal-inicio .card .card-body .card-title{
+       font-size: 1.2rem;
+    }
+
+    .contenido-principal-inicio .card .card-body .card-text{
+        font-size: large;
+    }
+
+    .secundario-inicio-uno{
+        margin: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: secundario-inicio-uno;
+    }
+
+    .secundario-inicio-uno img{
+        width: 100%;
+    }
+
+    .secundario-inicio-dos img{
+        width: 6%;
+    }
+
+    .inicio-derechos{
+        height: 30vh;
+        margin: .5rem;
+        display: flex;
+        justify-content: space-around;
+        grid-area: inicio-derechos;
+    }
+
+    .inicio-derechos h3{
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .inicio-derechos h4{
+        font-size: medium;
+    }
+
+    .inicio-derechos .hijo-cuatro-derecho{
+        display: block;
+    }
+
+    /* fin de estilos para footer de inicio formaro pc */
+}
+
+/* fin de los estilos para index */
+
+
+
+/* estilos para segundo HTML hombres formato mobile */
+
+
+/* estilos para contenido extra de hombre */
+
+.padre-extra-hombre{
+    height: 40vh;
+    margin: .5rem;
+    margin-top: 1rem;
+}
+
+.padre-extra-hombre img{
+    width: 100%;
+}
+
+.padre-extra-hombre .hijo-extra-hombre{
+    background-color: #D1D1D1;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    border-radius: .5rem;
+}
+
+.padre-extra-hombre .hijo-extra-hombre p{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+
+.padre-extra-hombre .hijo-extra-hombre button{
+    background-color: black;
+    color: white;
+    padding: .5rem;
+    border-radius: 2rem;
+    width: 25%;
+    font-size: medium;
+}
+
+/* fin de estilos para contenido extra de hombre */
+
+/* estilos para contenido principal de hombre */
+
+.contenedor-hombre{
+    background-color: #D1D1D1;
+    margin: .5rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.contenedor-hombre .hijo-contenedor-hombre{
+    padding: .5rem;
+}
+
+.contenedor-hombre .hijo-contenedor-hombre{
+    padding: .5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.contenedor-hombre .hijo-contenedor-hombre h2{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 1.5rem;
+    padding: .5rem;
+    width: 25%;
+    text-align: center;
+    font-size: 1.1rem
+}
+
+.contenedor-hombre .hijo-contenedor-hombre a{
+    text-decoration: none;
+    color: white;
+}
+
+.contenedor-hombre .hijo-contenedor-hombre img{
+    width: 100%;
+}
+
+/* fin de estilos para contenido principal hombre */
+
+/* estilos para contenido secundario hombre */
+
+   .padre-secundario-hombre{
+    background-color: #D1D1D1;
+    margin: .5rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: .5rem;
+   }
+
+   .padre-secundario-hombre h3{
+    width: 60%;
+    text-align: center;
+    padding: .5rem;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px black;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 2pc black;
+   }
+
+
+   .padre-secundario-hombre img{
+    width: 100%;
+   }
+
+
+   /* fin de estilos contenido secundario hombre */
+
+   /* fin de estilos para contenido principal hombre */
+
+
+/* estilos para formato table de hombre */
+ @media screen and (min-width:600px){
+  
+    .contenedor-hombre{
+        margin-top: 4rem;
+    }
+ }
+
+ /* fin de estilos para formato tablet de hombre */
+
+
+ /* estilos para hombre en formato pc */
+
+ @media screen and (min-width:1024px){
+
+    .div-padre-hombre{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-columns: auto;
+
+        grid-template-areas: 
+        "contenedor-inicio contenedor-inicio"
+        "padre-extra-hombre padre-extra-hombre"
+        "contenedor-hombre contenedor-hombre"
+        "secundario-inicio-uno secundario-inicio-uno"
+        "padre-secundario-hombre padre-secundario-hombre"
+        "secundario-inicio-dos secundario-inicio-dos"
+        "inicio-derechos inicio-derechos";
+    }
+
+    .contenedor-inicio{
+        grid-area: contenedor-inicio;
+    }
+
+    .padre-extra-hombre{
+        height: 100vh;
+        margin-bottom: 4rem;
+        grid-area: padre-extra-hombre;
+    }
+
+    .padre-extra-hombre .hijo-extra-hombre{
+        height: 25vh;
+    }
+
+    .padre-extra-hombre .hijo-extra-hombre h1{
+        font-size: 4rem;
+    }
+
+    .padre-extra-hombre .hijo-extra-hombre button{
+        width: 8%;
+        font-size: large;
+        transition: 1s;
+    }
+
+    .padre-extra-hombre .hijo-extra-hombre button:hover{
+        transform: scale(.9);
+        background-color: whitesmoke;
+        color: black;
+        box-shadow: 3px 3px 5px black;
+        transition: 1s;
+    }
+
+    .contenedor-hombre{
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        grid-area: contenedor-hombre;
+    }
+
+    .contenedor-hombre .hijo-contenedor-hombre{
+        display: block;
+        height: 75vh;
+        display: flex;
+    }
+
+    .contenedor-hombre .hijo-contenedor-hombre h2{
+       bottom: 3.5rem;
+       left: 1.5rem;
+       width: 20%;
+       padding: 1rem;
+       text-transform: uppercase;
+       transition: 2s;
+    }
+
+    .contenedor-hombre .hijo-contenedor-hombre h2:hover{
+        transform: scale(.9);
+        transition: 2s;
+    }
+
+    .contenedor-hombre .hijo-contenedor-hombre a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .secundario-inicio-uno{
+        grid-area: secundario-inicio-uno;
+    }
+
+    .padre-secundario-hombre{
+        grid-area: padre-secundario-hombre;
+    }
+
+    .padre-secundario-hombre h3{
+      width: 35%;
+      padding: 1rem;
+      font-size: 3rem;
+      transition: 2s;
+    }
+
+    .padre-secundario-hombre h3:hover{
+        transform: scale(1.1);
+        transition: 2s;
+    }
+
+    .secundario-inicio-dos{
+        grid-area: secundario-inicio-dos;
+    }
+
+    .inicio-derechos{
+        grid-area: inicio-derechos;
+    }
+
+ }
+
+ /* fin de estilos en formato pc para hombre */
+
+ /* fin de estilos generales para HTML hombre */
+
+
+ /* estilos generales para HTML mujer formato mobile */
+
+ /* estilos para contenido extra mujer */
+
+.contenido-extra-mujer{
+    background-color: #D1D1D1;
+    height: 23vh;
+    margin: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: .5rem;
+}
+
+.contenido-extra-mujer img{
+    width: 100%;
+}
+
+.contenido-extra-mujer h1{
+    font-weight: bold;
+}
+/* fin de estilos para contenido extra mujer */
+
+/* estilos para contenido principal mujer */
+
+.contenedor-padre-mujer{
+    background-color: #D1D1D1;
+    margin: .5rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: .5rem;
+}
+
+.carousel-indicators button{
+    display: none;
+}
+
+.contenedor-padre-mujer .carousel .carousel-inner .carousel-item img{
+    width: 100%;
+} 
+
+.contenedor-padre-mujer .carousel .carousel-inner .carousel-item .carousel-caption{
+    display: none;
+}
+
+/* fin de estilos para contenido principal de mujer */
+
+/* estilos para contenido secundario mujer */
+
+.secundario-mujer{
+    background-color: #D1D1D1;
+    margin: .5rem;
+}
+
+.secundario-mujer img{
+    width: 100%;
+}
+
+.contenedor-mujer-tres{
+    background-color: #D1D1D1;
+    margin: .5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: .5rem;
+}
+
+.contenedor-mujer-tres img{
+    width: 90%;
+}
+
+.contenedor-mujer-tres .contenido-mujer-uno{
+    margin: .5rem;
+    padding: .5rem;
+    width: 90%;
+    text-align: center;
+}
+
+.contenedor-mujer-tres .contenido-mujer-uno h2{
+    font-weight: bold;
+}
+
+/* fin de estilos para contenido secundario mujer */
+
+/* fin de estilos generales para mujer formato mobile */
+
+
+/* estilos para mujer en formato tablet */
+
+@media screen and (min-width: 600px){
+    .contenido-extra-mujer{
+        height: 29vh;
+    }
+}
+
+/* fin de estilos para mujer en formato tablet */
+
+/* estilos para mujer en formato pc */
+
+@media screen and (min-width: 1024px){
+
+    .div-padre-mujer{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+
+        grid-template-areas: 
+        "contenedor-inicio contenedor-inicio"
+        "contenido-extra-mujer contenido-extra-mujer"
+        "contenedor-padre-mujer contenedor-padre-mujer"
+        "secundario-mujer secundario-mujer"
+        "contenedor-mujer-tres contenedor-mujer-tres"
+        "secundario-inicio-dos secundario-inicio-dos"
+        "inicio-derechos inicio-derechos";
+    }
+
+    .contenedor-inicio{
+        grid-area: contenedor-inicio;
+    }
+
+   .contenido-extra-mujer{
+    height: 85vh;
+    grid-area: contenido-extra-mujer;
+   }
+
+   .contenido-extra-mujer h1{
+    font-size: 4rem;
+   }
+
+   /* estilos de primer carousel */
+   .contenedor-padre-mujer{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-area: contenedor-padre-mujer;
+   }
+
+   .contenedor-padre-mujer .carousel{
+    height: 80vh;
+    text-align: center;
+    width: 45%;
+    padding: .5rem;
+   }
+
+   .contenedor-padre-mujer .carousel .carousel-inner .carousel-item img{
+        width: 90%;
+   }
+
+   .contenedor-padre-mujer .carousel .carousel-inner .carousel-item .carousel-caption h5{
+    background-color: rgb(224, 224, 224);
+    color: black;
+    width: 70%;
+    margin-left: 6.4rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 5px black;
+   }
+
+   .contenedor-padre-mujer .carousel .carousel-inner .carousel-item .carousel-caption p{
+    background-color: rgb(188, 188, 188);
+    color: black;
+    width: 75%;
+    margin-left: 5.4rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    font-size: large;
+    box-shadow: 3px 3px 5px black;
+   }
+
+   /* estilos para segundo carousel */
+
+   .contenedor-padre-mujer .carousel .carousel-inner .carousel-item .d-block{
+    width: 90%;
+    margin-left: 2.7rem;
+   }
+
+   /* fin de estilos contenido principal mujer formato pc */
+
+   /* estilos para contenido secundario mujer formato pc */
+
+   .secundario-mujer{
+    grid-area: secundario-mujer;
+   }
+
+    .contenedor-mujer-tres{
+        background-color: #D1D1D1; 
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        grid-area: contenedor-mujer-tres;
+    }
+
+    .contenedor-mujer-tres img{
+        width: 23%;
+    }
+
+
+    .contenedor-mujer-tres  .contenido-mujer-uno{
+        width: 23%;
+    }
+
+    .contenedor-mujer-tres  .contenido-mujer-uno h2{
+        font-size: 1.5rem;
+    }
+
+    .secundario-inicio-dos{
+        grid-area: secundario-inicio-dos;
+    }
+
+    .inicio-derechos{
+        grid-area: inicio-derechos;
+    }
+
+}
+
+/* fin de estilos para HTML mujer */
+
+
+/* estilos para HTML ofertas formato mobile*/
+
+    .div-extra-oferta{
+        background-color: #D1D1D1;
+        margin: .5rem;
+        margin-top: 1rem;
+        text-align: center;
+        border-radius: .5rem;
+    }
+
+    .div-extra-oferta img{
+        width: 100%;
+    }
+
+    .div-extra-oferta h1{
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    /* estilos para contenido principal de oferta */
+
+    .padre-principal-oferta{
+        background-color: #D1D1D1;
+        height: 120vh;
+        margin: .5rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: .5rem;
+        border-radius: .5rem;
+    }
+
+    .padre-principal-oferta .card{
+        width: 14rem;
+    }
+
+    .padre-principal-oferta .card .card-body h2{
+        font-size: 1.3rem;
+    }
+
+    .padre-principal-oferta .card .card-body p{
+        font-size: small;
+    }
+
+    /* estilos contenido secundario oferta uno */
+
+    .secundario-oferta-uno{
+        background-color: #D1D1D1;
+        margin: .5rem;
+        margin-top: 1rem;
+        padding: .5rem;
+        text-align: center;
+        border-radius: .5rem;
+        box-shadow: 2px 2px 1.5pc black;
+    }
+
+    .secundario-oferta-uno h3{
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+
+    /*estilos contedido secundario oferta dos */
+
+    .secundario-oferta-dos{
+        background-color: #D1D1D1;
+        height: 120vh;
+        margin: .5rem;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: .5rem;
+        border-radius: .5rem;
+    }
+
+    .secundario-oferta-dos .card{
+        width: 14rem;
+    }
+
+    .secundario-oferta-dos .card .card-body h2{
+        font-size: 1.3rem;
+    }
+
+    .secundario-oferta-dos .card .card-body p{
+        font-size: small;
+    }
+
+    .publicidad-oferta{
+        margin: .5rem;
+        margin-top: 1rem;
+    }   
+
+    .publicidad-oferta img{
+        width: 100%;
+    }
+
+    /* fin de estilos HTML oferta formato mobile */
+
+    /* estilos HTML oferta formato tablet */
+
+    @media screen and (min-width: 600px){
+      
+    }
+
+    /* fin de estilos HTML formato tablet */
+
+    /* estilos HTML oferta formato pc */
+
+    @media screen and (min-width: 600px){
+        
+        .div-extra-oferta h1{
+            font-size: 4rem;
+        }
+
+        /* estilos contenido principal */
+        .padre-principal-oferta{
+            height: 50vh;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .padre-principal-oferta .card{
+            width: 18.5rem;
+            transition: 1s;
+        }
+
+        .padre-principal-oferta .card:hover{
+            transform: scale(.9);
+            transition: 1s;
+            background-color: rgb(216, 216, 216);
+            box-shadow: 2px 2px 3pc black;
+        }
+
+        .padre-principal-oferta .card .card-body h2{
+            font-size: 1.8rem;
+        }
+
+        .padre-principal-oferta .card .card-body p{
+            font-size: medium;
+        }
+
+        /* estilos contenido secundario uno */
+
+        .secundario-oferta-uno h3{
+            font-size: 4rem;
+        }
+
+
+        /* estilos contenido secundario dos */
+
+        .secundario-oferta-dos{
+            height: 50vh;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .secundario-oferta-dos .card{
+            width: 18.5rem;
+            transition: 1s;
+        }
+
+        .secundario-oferta-dos .card:hover{
+            transform: scale(.9);
+            transition: 1s;
+            background-color: rgb(216, 216, 216);
+            box-shadow: 2px 2px 3pc black;
+        }
+
+        .secundario-oferta-dos .card .card-body h2{
+            font-size: 1.8rem;
+        }
+
+        .secundario-oferta-dos .card .card-body p{
+            font-size: medium;
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
